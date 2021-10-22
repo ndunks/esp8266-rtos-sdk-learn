@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Xtensa",
+        "compilers": {
+            "C": "/rifin/app/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc",
+            "CXX": "/rifin/app/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++"
+        }
+    }
+]
