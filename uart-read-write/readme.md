@@ -1,4 +1,2 @@
 
-## Output
-
-## Build Size
+## UART READ WRITE TO CONTROL BLINK DELAY

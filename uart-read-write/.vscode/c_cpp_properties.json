@@ -3,17 +3,20 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceRoot}/build/include",
                 "${env:IDF_PATH}/components/heap/include",
                 "${env:IDF_PATH}/components/heap/port/esp8266/include",
-                "${env:IDF_PATH}/components/esp8266/include",
                 "${env:IDF_PATH}/components/freertos/include",
                 "${env:IDF_PATH}/components/freertos/include/freertos/private",
                 "${env:IDF_PATH}/components/freertos/port/esp8266/include/freertos",
                 "${env:IDF_PATH}/components/freertos/port/esp8266/include",
                 "${env:IDF_PATH}/components/esp_common/include",
+                "${env:IDF_PATH}/components/esp8266/include",
                 "${env:IDF_PATH}/components/spi_flash/include",
-                "${env:IDF_PATH}/components/log/include"
+                "${env:IDF_PATH}/components/vfs/include",
+                "${env:IDF_PATH}/components/log/include",
+                "${env:IDF_PATH}/components/newlib/platform_include",
+                "${workspaceRoot}/main/**",
+                "${workspaceRoot}/build/include"
             ],
             "defines": [
                 "__ESP_FILE__=\"${workspaceRoot}/main/main.c\""

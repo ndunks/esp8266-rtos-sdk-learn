@@ -6,7 +6,8 @@
         "portable.h": "c",
         "portmacro.h": "c",
         "uart.h": "c",
-        "ets_sys.h": "c"
+        "ets_sys.h": "c",
+        "esp_vfs_dev.h": "c"
     },
     "files.watcherExclude": {
         "**/build/**": true
