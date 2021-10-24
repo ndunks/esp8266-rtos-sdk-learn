@@ -5,7 +5,8 @@
         "task.h": "c",
         "portable.h": "c",
         "portmacro.h": "c",
-        "uart.h": "c"
+        "uart.h": "c",
+        "ets_sys.h": "c"
     },
     "files.watcherExclude": {
         "**/build/**": true

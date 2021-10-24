@@ -3,8 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                // "${workspaceRoot}/include",
-                "${workspaceRoot}/build/config",
+                "${workspaceRoot}/build/include",
                 "${env:IDF_PATH}/components/heap/include",
                 "${env:IDF_PATH}/components/heap/port/esp8266/include",
                 "${env:IDF_PATH}/components/esp8266/include",
