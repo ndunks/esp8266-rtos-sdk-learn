@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "linux-esp8266-rtos",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/rifin/app/ESP8266_RTOS_SDK/components/esp_common/include",
+                "/rifin/app/ESP8266_RTOS_SDK/components/spi_flash/include",
+                "/rifin/app/ESP8266_RTOS_SDK/components/heap/include",
+                "/rifin/app/ESP8266_RTOS_SDK/components/heap/port/esp8266/include",
+                "/rifin/app/ESP8266_RTOS_SDK/components/esp8266/include/",
+                "/rifin/app/ESP8266_RTOS_SDK/components/freertos/include/**",
+                "/rifin/app/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/**",
+                "/rifin/app/ESP8266_RTOS_SDK/components/freertos/include/freertos/private"
+            ],
+            "defines": [
+                "__ESP_FILE__=\"dummy.c\""
+            ],
+            "compilerPath": "/rifin/app/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x86"
+        }
+    ],
+    "version": 4
+}

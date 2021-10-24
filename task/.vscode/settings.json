@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "esp_system.h": "c",
+        "freertosconfig.h": "c",
+        "stdio.h": "c",
+        "task.h": "c",
+        "portable.h": "c",
+        "esp8266.h": "c",
+        "gpio_register.h": "c",
+        "pin_mux_register.h": "c",
+        "eagle_soc.h": "c",
+        "portmacro.h": "c",
+        "stdlib.h": "c"
+    },
+    "files.watcherExclude": {
+        "**/build/**": true
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}
