@@ -10,8 +10,8 @@ void blink_task(void *null)
     {
         // Delay and turn on
         vTaskDelay(1000 / portTICK_PERIOD_MS);
-        gpio_set_level(GPIO_NUM_2, state);
-        state ^= 1;
+        printf("BLINK... %d\n", state);
+        gpio_set_level(GPIO_NUM_2, state ^= 1);
     }
     vTaskDelete(NULL);
 }
@@ -33,38 +33,9 @@ void configure_pins()
     gpio_config(&io_conf);
 }
 
-void main_task(void *null)
-{
-    volatile UBaseType_t i, taskCount;
-    static TaskStatus_t *tasks;
-
-    for (;;)
-    {
-        taskCount = uxTaskGetNumberOfTasks();
-        tasks = pvPortMalloc(taskCount * sizeof(TaskStatus_t));
-        uxTaskGetSystemState(tasks, taskCount, NULL);
-
-        for (i = 0; i < taskCount; i++)
-        {
-            printf("%u %s %u %u %u %u\n",
-                   tasks[i].xTaskNumber,
-                   tasks[i].pcTaskName,
-                   tasks[i].uxBasePriority,
-                   tasks[i].uxCurrentPriority,
-                   tasks[i].ulRunTimeCounter,
-                   tasks[i].usStackHighWaterMark);
-        }
-        printf("Tasks: %u\n----------------\n", taskCount);
-        vTaskDelay(pdMS_TO_TICKS(3000));
-    }
-}
-
 void app_main()
 {
     printf("100ms is %d ticks\n", pdMS_TO_TICKS(100));
-
     configure_pins();
-
-    xTaskCreate(&blink_task, "blink", 158, NULL, 1, NULL);
-    xTaskCreate(&main_task, "main", 1000, NULL, 2, NULL);
+    xTaskCreate(&blink_task, "blink", 800, NULL, 1, NULL);
 }
