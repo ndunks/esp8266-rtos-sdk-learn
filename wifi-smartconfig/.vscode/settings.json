@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "esp_smartconfig.h": "c"
+    },
+    "files.watcherExclude": {
+        "**/build/**": true
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}

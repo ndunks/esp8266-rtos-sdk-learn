@@ -1,0 +1,3 @@
+[submodule "esp_smartcfg_linux"]
+	path = wifi-smartconfig-linux
+	url = git@github.com:CaptainDouche/esp_smartcfg_linux.git

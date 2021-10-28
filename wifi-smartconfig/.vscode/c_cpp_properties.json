@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${env:IDF_PATH}/components/heap/include",
+                "${env:IDF_PATH}/components/heap/port/esp8266/include",
+                "${env:IDF_PATH}/components/freertos/include",
+                "${env:IDF_PATH}/components/freertos/include/freertos/private",
+                "${env:IDF_PATH}/components/freertos/port/esp8266/include/freertos",
+                "${env:IDF_PATH}/components/freertos/port/esp8266/include",
+                "${env:IDF_PATH}/components/esp_common/include",
+                "${env:IDF_PATH}/components/esp_event/include",
+                "${env:IDF_PATH}/components/esp8266/include",
+                "${env:IDF_PATH}/components/spi_flash/include",
+                "${env:IDF_PATH}/components/vfs/include",
+                "${env:IDF_PATH}/components/log/include",
+                "${env:IDF_PATH}/components/lwip/port/esp8266/include",
+                "${env:IDF_PATH}/components/lwip/lwip/src/include",
+                "${env:IDF_PATH}/components/lwip/include/apps/**",
+                "${env:IDF_PATH}/components/nvs_flash/include",
+                "${env:IDF_PATH}/components/newlib/platform_include",
+                "${env:IDF_PATH}/components/tcpip_adapter/include",
+                "${env:IDF_PATH}/components/console",
+                
+                "${workspaceRoot}/build/include"
+            ],
+            "defines": [
+                "__ESP_FILE__=\"${workspaceRoot}/main/main.c\""
+            ],
+            "compilerPath": "${env:HOME}/app/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x86"
+        }
+    ],
+    "version": 4
+}
