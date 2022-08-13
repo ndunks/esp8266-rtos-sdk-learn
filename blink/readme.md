@@ -1,4 +1,18 @@
+## Setup
 
+``` bash
+# Prepare directory for building files
+mkdir build
+cd build
+
+# Setup make files
+cmake ..
+# on debian, must explicitly use PYTHON=python3
+cmake -DPYTHON="python3" ..
+
+# Build
+make
+```
 
 
 ## Build Size

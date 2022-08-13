@@ -10,7 +10,7 @@ while Arduino IDE manything is handled by IDE.
 
 ## Development Setup
 
-There's many way to setup SDK, you can follow [official instruction](https://github.com/espressif/ESP8266_RTOS_SDK) too (but you need to change some options). when you can build & flash hello-world project (make all, make flash) without error, its mean your setup its OK.
+There's many way to setup SDK, you can follow instruction on [Github Project](https://github.com/espressif/ESP8266_RTOS_SDK) or [Ofiicial site](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/#install-the-required-python-packages) (in some case you need to change some options). when you can build & flash hello-world project (make all, make flash) without error, its mean your setup its OK.
 
 in my Linux (Debian) machine, my setup is:
 
